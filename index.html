@@ -10,13 +10,27 @@
 </head>
 <body>
   <header>
-    <h1 class="name">Your Name</h1>
+    <div class="left-name">Your Name</div>
+    <div class="menu-icon" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
   </header>
 
+  <aside id="sidebar" class="sidebar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Work Experience</a>
+  </aside>
+
   <main>
-    <section class="hero">
+    <section id="home" class="hero">
       <h2 class="welcome">HEY, WELCOME TO MY WEBSITE</h2>
-      <p class="intro">I'm a Mechanical Engineer passionate about design, technology, and real-world problem-solving.</p>
+      <p class="intro">
+        I'm a Mechanical Engineer focused on innovation, design, and real-world problem-solving.  
+        I love CAD, robotics, and creative engineering solutions.  
+        This space is for my professional story, ideas, and engineering thoughts.
+      </p>
     </section>
 
     <section class="newsletter">
@@ -24,15 +38,16 @@
       <input type="email" placeholder="Enter your email" />
       <button>Subscribe</button>
     </section>
-
-    <section class="contact-icons">
-      <div class="icon" onclick="showContact('phone')"><i class="fas fa-phone"></i></div>
-      <div class="icon" onclick="showContact('email')"><i class="fas fa-envelope"></i></div>
-      <div class="icon" onclick="showContact('linkedin')"><i class="fab fa-linkedin"></i></div>
-    </section>
-
-    <div id="contact-info" class="contact-info"></div>
   </main>
+
+  <footer>
+    <h3>Contact Me</h3>
+    <div class="footer-icons">
+      <a href="tel:+911234567890"><i class="fas fa-phone"></i></a>
+      <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
