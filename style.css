@@ -70,18 +70,18 @@ header {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 900;
   color: white;
   background-color: transparent;
-  border: 2px solid white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 36px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-icon:hover {
+  transform: scale(1.2);
+  color: #ccc;
 }
 
 .close-icon:hover {
