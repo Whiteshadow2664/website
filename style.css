@@ -70,13 +70,17 @@ header {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 48px;
-  font-weight: 900;
+  font-size: 36px;
   color: white;
-  background-color: transparent;
+  background: none;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-icon:hover {
+  transform: scale(1.2);
+  color: #ccc;
 }
 
 .close-icon:hover {
