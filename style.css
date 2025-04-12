@@ -156,6 +156,7 @@ footer {
 }
 
 .icon-img {
-  width: 28px;
-  height: 28px;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
 }
