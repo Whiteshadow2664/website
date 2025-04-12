@@ -9,30 +9,40 @@ body {
 header {
   background: #2c3e50;
   color: white;
-  padding: 60px 20px;
+  padding: 20px 20px;
 }
 
 .name {
   font-family: 'Special Gothic Expanded One', sans-serif;
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero {
+  margin-top: 60px;
+  padding: 20px;
 }
 
 .welcome {
   font-family: 'Special Gothic Expanded One', sans-serif;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .intro {
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 22px;
   font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .newsletter {
   margin-top: 50px;
+}
+
+.newsletter h3 {
+  font-size: 20px;
 }
 
 .newsletter input {
