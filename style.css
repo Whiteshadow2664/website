@@ -67,12 +67,26 @@ header {
 }
 
 .close-icon {
-  font-size: 28px;
   position: absolute;
   top: 15px;
   right: 20px;
-  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
   color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-icon:hover {
+  background-color: #ffffff20;
+  transform: scale(1.1);
 }
 
 /* Hero Section */
