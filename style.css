@@ -23,6 +23,15 @@ header {
 .menu-icon {
   font-size: 28px;
   cursor: pointer;
+  color: black; /* changed from white to black */
+}
+
+.close-icon {
+  font-size: 28px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
   color: white;
 }
 
