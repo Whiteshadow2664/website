@@ -37,7 +37,7 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  transition: 0.3s ease;
+  transition: right 0.3s ease;
   box-shadow: -2px 0 5px rgba(0,0,0,0.2);
   z-index: 10;
 }
@@ -71,7 +71,7 @@ header {
 
 .intro {
   font-size: 22px;
-  font-weight: 300;
+  font-weight: normal; /* non-bold */
   max-width: 700px;
   margin: 0 auto;
 }
