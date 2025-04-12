@@ -6,8 +6,8 @@ body {
 }
 
 header {
-  background: #09ebf6;
-  color: #000;
+  background: #222;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,8 +30,8 @@ header {
   right: -250px;
   height: 100%;
   width: 250px;
-  background-color: #09ebf6;
-  color: #000;
+  background-color: #222;
+  color: #fff;
   display: flex;
   flex-direction: column;
   padding-top: 60px;
@@ -42,12 +42,12 @@ header {
 .sidebar a {
   padding: 15px 25px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 18px;
 }
 
 .sidebar a:hover {
-  background-color: #00cbd4;
+  background-color: #444;
 }
 
 .hero {
@@ -103,8 +103,8 @@ header {
 }
 
 footer {
-  background-color: #09ebf6;
-  color: black;
+  background-color: #222;
+  color: white;
   text-align: center;
   padding: 30px 20px;
   margin-top: 50px;
@@ -116,11 +116,14 @@ footer {
 
 .footer-icons a {
   margin: 0 15px;
-  color: black;
-  font-size: 24px;
   text-decoration: none;
 }
 
-.footer-icons a:hover {
-  color: #333;
+.icon-circle {
+  background-color: #09ebf6;
+  color: black;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline-block;
+  font-size: 24px;
 }
