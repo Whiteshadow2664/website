@@ -1,1 +1,1 @@
-1
+console.log("Welcome to my professional website!");
