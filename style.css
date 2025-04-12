@@ -163,3 +163,10 @@ footer {
   color: #000;
   transform: scale(1.1);
 }
+
+/* For contact icons inside circles */
+.icon-img {
+  width: 50%; /* Resize the icon to fit inside the circle */
+  height: 50%; /* Resize the icon to fit inside the circle */
+  object-fit: contain; /* Ensure icon maintains aspect ratio and fits within the circle */
+}
