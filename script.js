@@ -1,8 +1,4 @@
 function toggleSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  if (sidebar.style.right === '0px') {
-    sidebar.style.right = '-250px';
-  } else {
-    sidebar.style.right = '0px';
-  }
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.right = sidebar.style.right === "0px" ? "-250px" : "0px";
 }
