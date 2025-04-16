@@ -8,6 +8,111 @@
   <script src="script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+
+    .about-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-section img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-section h1 {
+      font-size: 36px;
+      margin: 10px 0 5px;
+    }
+
+    .about-section p.subtitle {
+      font-size: 18px;
+      color: #7f8c8d;
+      margin-bottom: 30px;
+    }
+
+    .card-section {
+      background-color: #ffffff;
+      padding: 25px 30px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .card-section h2 {
+      font-size: 22px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #34495e;
+    }
+
+    .card-section ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .icon-circle {
+      background-color: #34495e;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .icon-circle:hover {
+      background-color: #3e5871;
+    }
+
+    .icon-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .sidebar {
+      /* Use your existing sidebar styles here */
+    }
+
+    header {
+      /* Assuming header styles are defined globally */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -24,29 +129,36 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <section class="about-section" style="text-align: center; padding: 40px 20px;">
-    <img src="images/profile.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom: 20px;">
+  <section class="about-section">
+    <img src="images/profile.jpg" alt="Profile Picture">
 
-    <h1 style="font-size: 32px; margin: 10px 0;">John Doe</h1>
-    <p style="font-size: 18px; color: gray;">Age: 27</p>
+    <h1>John Doe</h1>
+    <p class="subtitle">Age: 27</p>
 
-    <p style="max-width: 600px; margin: 20px auto; font-size: 16px; line-height: 1.6;">
-      I'm a Mechanical Engineer with a keen interest in innovation, automation, and design thinking. I enjoy working on real-world engineering problems and exploring new technology trends to stay ahead in the field.
-    </p>
+    <div class="card-section">
+      <h2>About Me</h2>
+      <p>
+        I'm a Mechanical Engineer with a passion for automation, robotics, and smart system design. I specialize in crafting efficient, real-world solutions through innovative thinking and hands-on problem solving. With a strong background in mechanical design and project development, I strive to merge creativity with technical excellence.
+      </p>
+    </div>
 
-    <h2 style="margin-top: 40px;">Education</h2>
-    <ul style="list-style: none; padding: 0; font-size: 16px;">
-      <li><strong>Bachelors in Mechanical Engineering</strong><br/>2017 - 2020</li>
-      <li style="margin-top: 15px;"><strong>Diploma in Mechanical Engineering</strong><br/>2014 - 2017</li>
-    </ul>
+    <div class="card-section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelors in Mechanical Engineering</strong> — 2017 to 2020</li>
+        <li><strong>Diploma in Mechanical Engineering</strong> — 2014 to 2017</li>
+      </ul>
+    </div>
 
-    <h2 style="margin-top: 40px;">Hobbies</h2>
-    <ul style="list-style: none; padding: 0; font-size: 16px;">
-      <li>Reading Sci-Fi novels</li>
-      <li>Sketching and Digital Art</li>
-      <li>DIY Engineering Projects</li>
-      <li>Playing chess</li>
-    </ul>
+    <div class="card-section">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Reading Sci-Fi Novels & Journals</li>
+        <li>Sketching and Digital Illustration</li>
+        <li>DIY Projects & Home Automation</li>
+        <li>Chess & Strategy Games</li>
+      </ul>
+    </div>
   </section>
 
   <footer>
