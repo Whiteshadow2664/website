@@ -1,2 +1,68 @@
-<h1>About Me</h1>
-<p>This is the About page.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="left-name">John Doe</h1>
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+  </header>
+
+  <div id="sidebar" class="sidebar">
+    <div class="close-icon" onclick="toggleSidebar()">✕</div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="about-section" style="text-align: center; padding: 40px 20px;">
+    <img src="images/profile.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom: 20px;">
+
+    <h1 style="font-size: 32px; margin: 10px 0;">John Doe</h1>
+    <p style="font-size: 18px; color: gray;">Age: 27</p>
+
+    <p style="max-width: 600px; margin: 20px auto; font-size: 16px; line-height: 1.6;">
+      I'm a Mechanical Engineer with a keen interest in innovation, automation, and design thinking. I enjoy working on real-world engineering problems and exploring new technology trends to stay ahead in the field.
+    </p>
+
+    <h2 style="margin-top: 40px;">Education</h2>
+    <ul style="list-style: none; padding: 0; font-size: 16px;">
+      <li><strong>Bachelors in Mechanical Engineering</strong><br/>2017 - 2020</li>
+      <li style="margin-top: 15px;"><strong>Diploma in Mechanical Engineering</strong><br/>2014 - 2017</li>
+    </ul>
+
+    <h2 style="margin-top: 40px;">Hobbies</h2>
+    <ul style="list-style: none; padding: 0; font-size: 16px;">
+      <li>Reading Sci-Fi novels</li>
+      <li>Sketching and Digital Art</li>
+      <li>DIY Engineering Projects</li>
+      <li>Playing chess</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h3>Contact Me</h3>
+    <img src="images/footer-img.gif" alt="Footer Image" style="max-width: 100%; height: auto; margin-bottom: 20px; border-radius: 10px;">
+    <div class="footer-icons">
+      <div class="icon-circle" onclick="alert('Call: +123456789')">
+        <img src="images/phone.png" alt="Phone" class="icon-img" />
+      </div>
+      <div class="icon-circle" onclick="alert('Email: me@example.com')">
+        <img src="images/mail.png" alt="Mail" class="icon-img" />
+      </div>
+      <div class="icon-circle" onclick="alert('LinkedIn: linkedin.com/in/johndoe')">
+        <img src="images/linkedin.png" alt="LinkedIn" class="icon-img" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
