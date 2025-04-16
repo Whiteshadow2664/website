@@ -8,12 +8,22 @@
   <script src="script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .section-heading {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
-  <h1 class="left-name"><a href="index.html" style="text-decoration: none; color: inherit;">John Doe</a></h1>
-  <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
-</header>
+    <h1 class="left-name"><a href="index.html" style="text-decoration: none; color: inherit;">John Doe</a></h1>
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+  </header>
 
   <div id="sidebar" class="sidebar">
     <div class="close-icon" onclick="toggleSidebar()">✕</div>
@@ -24,21 +34,21 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <section class="about-section" style="margin-top: 80px; text-align: center;">
+  <section class="about-section" style="margin-top: 80px; text-align: left; padding: 0 40px;">
     <img src="images/profile.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom: 20px;">
 
     <h1>John Doe</h1>
     <p class="subtitle">Age: 27</p>
 
     <div class="card-section">
-      <h2>About Me</h2>
+      <h2 class="section-heading">About Me</h2>
       <p>
         I'm a Mechanical Engineer with a passion for automation, robotics, and smart system design. I specialize in crafting efficient, real-world solutions through innovative thinking and hands-on problem solving. With a strong background in mechanical design and project development, I strive to merge creativity with technical excellence.
       </p>
     </div>
 
     <div class="card-section">
-      <h2>Education</h2>
+      <h2 class="section-heading">Education</h2>
       <ul>
         <li><strong>Bachelors in Mechanical Engineering</strong> — 2017 to 2020</li>
         <li><strong>Diploma in Mechanical Engineering</strong> — 2014 to 2017</li>
@@ -46,7 +56,7 @@
     </div>
 
     <div class="card-section">
-      <h2>Hobbies</h2>
+      <h2 class="section-heading">Hobbies</h2>
       <ul>
         <li>Reading Sci-Fi Novels & Journals</li>
         <li>Sketching and Digital Illustration</li>
@@ -56,21 +66,20 @@
     </div>
   </section>
 
-    <footer>
-  <!-- Small footer GIF before the contact heading -->
-  <img src="images/footer-img.gif" alt="Footer Animation" style="width: 90px; height: auto; margin-bottom: 20px; border-radius: 10px;">
-  <h3>Contact Me</h3>
-  <div class="footer-icons">
-    <div class="icon-circle" onclick="alert('Call: +123456789')">
-      <img src="images/phone.png" alt="Phone" class="icon-img" />
+  <footer>
+    <img src="images/footer-img.gif" alt="Footer Animation" style="width: 90px; height: auto; margin-bottom: 20px; border-radius: 10px;">
+    <h3>Contact Me</h3>
+    <div class="footer-icons">
+      <div class="icon-circle" onclick="alert('Call: +123456789')">
+        <img src="images/phone.png" alt="Phone" class="icon-img" />
+      </div>
+      <div class="icon-circle" onclick="window.location.href='mailto:me@example.com'">
+        <img src="images/mail.png" alt="Mail" class="icon-img" />
+      </div>
+      <div class="icon-circle" onclick="window.location.href='https://linkedin.com/in/johndoe'">
+        <img src="images/linkedin.png" alt="LinkedIn" class="icon-img" />
+      </div>
     </div>
-    <div class="icon-circle" onclick="window.location.href='mailto:me@example.com'">
-      <img src="images/mail.png" alt="Mail" class="icon-img" />
-    </div>
-    <div class="icon-circle" onclick="window.location.href='https://linkedin.com/in/johndoe'">
-      <img src="images/linkedin.png" alt="LinkedIn" class="icon-img" />
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
